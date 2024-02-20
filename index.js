@@ -20,6 +20,11 @@ app.get('/', async (req, res) => {
     content = content.replace("$haberler", send);
     res.send(content);
 });
+
+app.get("/style.css", (req, res) => {
+    res.sendFile(__dirname + "/style.css");
+});
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })
