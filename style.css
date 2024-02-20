@@ -16,6 +16,13 @@ img {
   top: 100px;
 }
 
+img {
+    width: 100px;  /* or any size you want */
+    height: 100px; /* or any size you want */
+    object-fit: cover; /* this will ensure that the aspect ratio of the image is maintained */
+  
+}
+
 .news-box:hover {
   transform: scale(1.1);
 }

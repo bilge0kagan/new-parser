@@ -21,6 +21,10 @@ app.get('/', async (req, res) => {
     res.send(content);
 });
 
+app.get("/settings", (req,res) => {
+    res.sendFile(__dirname + "/settings.html");
+})
+
 app.get("/style.css", (req, res) => {
     res.sendFile(__dirname + "/style.css");
 });
